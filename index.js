@@ -1,14 +1,14 @@
 const mineflayer = require('mineflayer');
 
 // Define the bot's username and password
-const botUsername = 'Username'; // Your bot's username
-const password = 'password';       // Your bot's password
+const botUsername = 'ayushplazebot'; // Your bot's username
+const password = '123456781ayush';       // Your bot's password
 
 let bot = mineflayer.createBot({
-  host: 'SERVER IP', // Server IP
-  port: 19132,                    // Server port
-  username: botUsername,          // Bot's name (do not change here)
-  version: '1.16.4'               // Server version
+  host: 'asholicsmp1.aternos.me', // Server IP
+  port: 22549,                    // Server port
+  username: ayushplaze,          // Bot's name (do not change here)
+  version: '1.21.4'               // Server version
 });
 
 // Function to set up event listeners for the bot
@@ -55,12 +55,12 @@ function setupEventListeners(bot) {
   // Bot disconnect event
   bot.on('end', () => {
     console.log('Bot has disconnected.');
-    reconnect(); // Attempt to reconnect on disconnect
+    reconnect(); rejoin every time when disconnect // Attempt to reconnect on disconnect
   });
 }
 
 // Function for random movement (example)
-function randomMovement() {
+function randomMovement(find diamonds) {
   setInterval(() => {
     const randomDirection = Math.random() < 0.5 ? 'forward' : 'back';
     bot.setControlState(randomDirection, true);
@@ -74,10 +74,10 @@ function randomMovement() {
 function reconnect() {
   console.log('Attempting to reconnect...');
   bot = mineflayer.createBot({
-    host: 'YOURSERVERIP',
-    port: 22382,
-    username: 'BOTUSERNAME',
-    version: '1.16.4'
+    host: 'asholicsmp1.aternos.me',
+    port: 22549,
+    username: 'ayushplazebot',
+    version: '1.21.4'
   });
 
   setupEventListeners(bot); // Reattach event listeners
