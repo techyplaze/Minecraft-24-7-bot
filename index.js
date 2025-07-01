@@ -1,12 +1,12 @@
 const mineflayer = require('mineflayer');
 
 // Define the bot's username and password
-const botUsername = 'Username'; // Your bot's username
-const password = 'password';       // Your bot's password
+const botUsername = 'bot 24/7'; // Your bot's username
+const password = 'asholicprokingdom';       // Your bot's password
 
 let bot = mineflayer.createBot({
-  host: 'SERVER IP', // Server IP
-  port: 19132,                    // Server port
+  host: 'asholicsmp1.aternos.me', // Server IP
+  port: 22549,                    // Server port
   username: botUsername,          // Bot's name (do not change here)
   version: '1.16.4'               // Server version
 });
@@ -74,8 +74,8 @@ function randomMovement() {
 function reconnect() {
   console.log('Attempting to reconnect...');
   bot = mineflayer.createBot({
-    host: 'YOURSERVERIP',
-    port: 22382,
+    host: 'asholicsmp1.aternos.me',
+    port: 22549,
     username: 'BOTUSERNAME',
     version: '1.16.4'
   });
